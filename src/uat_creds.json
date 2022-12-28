@@ -1,0 +1,9 @@
+{
+    "USERNAME": "GG_DS_Internal",
+     "PASSWORD": "Snowflak3",
+     "ACCOUNT": "qr87976.east-us-2.azure",
+     "WAREHOUSE": "DS_GG_DEV_DWH",
+     "DATABASE": "GLOC_DEV",
+     "SCHEMA": "00_REF",
+     "ROLE": "GG_DS_DEV_ADMIN"
+}

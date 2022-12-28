@@ -1,0 +1,5 @@
+outs:
+- md5: 73e285184e25791bf5b8f49d8f119042
+  size: 44532
+  isexec: true
+  path: API_DATA_GENERATION.ipynb

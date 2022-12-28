@@ -1,0 +1,3 @@
+prepare:
+  MODEL_TYPE: API
+  TEST_SET_LENGTH: 2
