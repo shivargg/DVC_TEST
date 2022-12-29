@@ -1,0 +1,10 @@
+stages:
+  build_dataset:
+    cmd: python ./src/API_DATA_GENERATION.py
+    deps:
+    - ./src/API_DATA_GENERATION.py
+    params:
+    - prepare.MODEL_TYPE
+    - prepare.TEST_SET_LENGTH
+    outs:
+    - ./data/API_dataset.pkl

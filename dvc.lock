@@ -1,0 +1,16 @@
+schema: '2.0'
+stages:
+  build_dataset:
+    cmd: python ./src/API_DATA_GENERATION.py
+    deps:
+    - path: ./src/API_DATA_GENERATION.py
+      md5: 3e239ec01ae213438c1ad024a9312811
+      size: 21613
+    params:
+      params.yaml:
+        prepare.MODEL_TYPE: API
+        prepare.TEST_SET_LENGTH: 2
+    outs:
+    - path: ./data/API_dataset.pkl
+      md5: e01a1a6e90bdb989649025da3c811d13
+      size: 9011773
