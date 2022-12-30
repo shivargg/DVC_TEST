@@ -1,8 +1,10 @@
 stages:
   build_dataset:
-    cmd: python ./src/API_DATA_GENERATION.py
+    cmd: python ./Convert_To_Procedures/convert_to_procedures.py
     deps:
-    - ./src/API_DATA_GENERATION.py
+    - ./sql/00_REF.sql
+  prepare_dataset:
+    cmd: python ./src/API_DATA_GENERATION.py
     params:
     - prepare.MODEL_TYPE
     - prepare.TEST_SET_LENGTH

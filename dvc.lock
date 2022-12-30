@@ -1,16 +1,18 @@
 schema: '2.0'
 stages:
   build_dataset:
-    cmd: python ./src/API_DATA_GENERATION.py
+    cmd: python ./Convert_To_Procedures/convert_to_procedures.py
     deps:
-    - path: ./src/API_DATA_GENERATION.py
-      md5: 3e239ec01ae213438c1ad024a9312811
-      size: 21613
+    - path: ./sql/00_REF.sql
+      md5: f4e4f0fe87a42a6f2a081fd84ebf9750
+      size: 4768
+  prepare_dataset:
+    cmd: python ./src/API_DATA_GENERATION.py
     params:
       params.yaml:
         prepare.MODEL_TYPE: API
         prepare.TEST_SET_LENGTH: 2
     outs:
     - path: ./data/API_dataset.pkl
-      md5: e01a1a6e90bdb989649025da3c811d13
+      md5: cdbf5ea3ef913bc87d34d533726606b7
       size: 9011773
